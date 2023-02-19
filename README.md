@@ -8,7 +8,7 @@ Ce projet est une calculatrice simple permettant aux utilisateurs d'effectuer de
 
 ## Aperçu
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/kinai972/Calculette-JavaScript/blob/master/assets/images/overview.png)
 
 
 
