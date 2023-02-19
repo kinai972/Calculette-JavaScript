@@ -1,0 +1,172 @@
+/* --------------------------- */
+/*            FONTS            */
+/* --------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* --------------------------- */
+/*          VARIABLES          */
+/* --------------------------- */
+:root {
+  /* ====== Alerts ====== */
+  /* Success */
+  --success: #5a7052;
+  --success-bg: #def2d6;
+
+  /* Warning */
+  --warning: #967132;
+  --warning-bg: #f8f3d6;
+
+  /* Error */
+  --error: #b32f2d;
+  --error-bg: #ecc8c5;
+  /* ===== End Alerts ===== */
+
+  --light-blue: #e1e7f4;
+  --purple: #18168b;
+
+  --size-main: clamp(16px, 2.7vw, 30px);
+}
+
+/* --------------------------- */
+/*    GLOBAL CONFIGURATIONS    */
+/* --------------------------- */
+/* Reset */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: var(--size-main);
+  font-family: Poppins, sans-serif;
+  background-color: var(--light-blue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* --------------------------- */
+/*          CALCULATOR         */
+/* --------------------------- */
+.container {
+  width: clamp(200px, 90%, 1200px);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+#result {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid;
+}
+#result.success,
+#result.warning,
+#result.error {
+  display: block;
+}
+#result.success {
+  color: var(--success);
+  background-color: var(--success-bg);
+  border: 0.2rem solid var(--success);
+}
+#result.warning {
+  color: var(--warning);
+  background-color: var(--warning-bg);
+  border: 0.2rem solid var(--warning);
+}
+#result.error {
+  color: var(--error);
+  background-color: var(--error-bg);
+  border: 0.2rem solid var(--error);
+}
+
+/* ===== Form ===== */
+.form-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.form-content input {
+  flex-grow: 1;
+  font-size: var(--size-main);
+  text-align: center;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 0.1rem solid var(--purple);
+  padding: 2rem 0;
+}
+.form-content ::placeholder {
+  color: var(--purple);
+  font-size: var(--size-main);
+}
+
+#operator {
+  flex-basis: 10%;
+  text-align: center;
+  background: none;
+  border: none;
+  color: var(--purple);
+  font-size: var(--size-main);
+}
+#operator option {
+  text-align: center;
+}
+
+/* Buttons */
+.btn-container {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap-reverse;
+}
+.btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+  display: block;
+}
+button[type="reset"] i {
+  font-size: 4rem;
+  color: var(--purple);
+}
+button[type="submit"] {
+  padding: 1.5rem 4rem;
+  font-size: var(--size-main);
+  background-color: var(--purple);
+  color: var(--light-blue);
+}
+/* ===== End Form ===== */
+
+#info {
+  min-height: 80px;
+  border: 0.2rem solid var(--purple);
+  color: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
