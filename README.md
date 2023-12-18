@@ -19,7 +19,7 @@ Ce projet est une calculatrice simple permettant aux utilisateurs d'effectuer de
 - JavaScript
 ## Installation
 
-Pour utiliser la calculatrice, il suffit de cloner ce repository sur votre ordinateur, ou de télécharger les fichiers puis ouvrir le fichier « index.php » avec votre navigateur.
+Pour utiliser la calculatrice, il suffit de cloner ce repository sur votre ordinateur, ou de télécharger les fichiers puis ouvrir le fichier « index.html » avec votre navigateur.
 
 ## Fonctionnalités
 
